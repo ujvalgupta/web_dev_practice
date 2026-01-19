@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "Waldenburg";
+    src: url("fonts/waldenburg/Simvkmrwwcnkkicglbiiqcwpbmu/Simvkmrwwcnkkicglbiiqcwpbmu.woff2") format(woff2),
+         url("fonts/waldenburg/Simvkmrwwcnkkicglbiiqcwpbmu/Simvkmrwwcnkkicglbiiqcwpbmu.woff2") format(woff);
+    font-style:normal;
+    font-display: swap;
+}
+
+body
+{
+    padding:0;
+    margin:0;
+}
+
+.hero-section
+{
+    height:90vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sign-up
+{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    border:1px solid rgb(228, 227, 227);
+    width:21.5%;
+    padding:0.7%;
+    margin-bottom:1%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.border-line
+{
+    border-bottom:1px solid rgb(228, 227, 227);
+    width:23%;
+    margin-top: 0.7%;
+    margin-bottom: 1.7%;
+}
+
+.sign-up-button
+{
+    background-color: #A6A6AE;
+    width:23.3%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:8%;
+    font-family: "Inter", sans-serif;
+    border-radius:10px;
+    color:white;
+    font-size:14px;
+    cursor: default
+}
+
+.already-registered
+{
+    display:flex;
+    justify-content: center;
+    padding-top:1%;
+    font-family: "Inter", sans-serif;
+    font-size:14px;
+    color:#323235;
+}
+
+.sign-in-anchor
+{ 
+    /* text-decoration controls decorative lines applied to text */
+    text-decoration: underline;  
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: hsl(240 5.1% 84.7%);
+    padding-left: 2px;
+    color:#323235;
+    font-weight: 500;
+}
+
+.input-stuff
+{
+    width:23%;
+    height:15%;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.input-fields
+{
+    background-color: white;
+    width:100%;
+    border:1px solid rgb(228, 227, 227);
+    border-radius:10px;
+    margin-top:3%;
+    height:47%
+}
+
+.password-field
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-input-field
+{
+    width:90%
+}
+
+.create-account
+{
+    font-family: "Waldenburg";
+    font-size:1.5rem;
+    padding-top:4.2%;
+    padding-bottom: 2%;
+}
+
+.google-sign-up
+{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 0.87rem;
+    padding-left:23.5%;
+}
+
+.password-eye
+{
+    width:6%;
+    height:47%;
+}
+
+.input-stuff-field-name
+{
+    cursor:pointer;
+}
+
+.footer-stuff
+{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-family: "Inter",sans-serif;
+    font-size:14px;
+    height:10vh;
+    color:grey;
+    background-color: rgb(245, 245, 245);
+    font-weight:500;
+}
+
+.footer-anchor
+{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    padding-left:3px;
+    padding-right:3px;
+    color:grey;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: hsl(240 5.1% 84.7%);
+}

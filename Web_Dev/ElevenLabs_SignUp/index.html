@@ -1,0 +1,52 @@
+<!-- The approach that I am following for this assignment is basically to first analyze the eleven labs sign up page and roughly figuring out the sections that will be there. In this case, I think just a hero section plus the footer section is needed. Then I started with hero section, and for the hero section, I first made the rough HTML structure and not at all focussing on the CSS properly.... just focussing on rough positioning using flex, rough colors not exact... It obviously triggers your OCD a but you'll have to bear with it, now when you feel that the html structure is on point, now you focus more on exact font size, types, colors, positioning, responsiveness of this specific hero section and after that move to footer section. I think its important to give 1 final round of CSS revision after all the sections are integrated and stuff is looking decent but still not perfect -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Icon.png" style="border-radius: 20px;">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign up | ElevenLabs</title>
+</head>
+<body>
+    <!-- hero section -->
+     <div class="hero-section">
+        <img src="elevenlabs-logo-black.png" alt="logo" width="105">
+        <div class="create-account">Create an account</div>
+        <div class="sign-up">
+            <img src="google_icon.png" alt="google_icon" width="23">
+            <div class="google-sign-up">Sign up with Google</div>
+        </div>
+        <div class="border-line"></div>
+        <div class="input-stuff">
+            <div class="input-stuff-field-name">Email</div>
+            <div contenteditable="true" class="input-fields"></div>
+        </div>
+        <div class="input-stuff">
+            <div class="input-stuff-field-name">Password</div>
+            <div class="input-fields password-field">
+                <div contenteditable="true" class="password-input-field"></div>
+                <img src="eye-icon.png" alt="eye-icon" class="password-eye">
+            </div>
+        </div>
+        <div class="sign-up-button">
+            <div>Sign up</div>
+        </div>
+        <div class="already-registered">
+            <div>Already registered?</div>
+            <a href="#" class="sign-in-anchor">Sign in</a>
+        </div>
+     </div>
+    <!-- footer -->
+     <div class="footer-stuff">
+        <span>By continuing, you agree to our</span>
+        <a href="#" class="footer-anchor">Terms of Service</a>
+        <span>and</span>
+        <a href="#" class="footer-anchor">Privacy Policy</a>
+     </div>
+</body>
+</html>
