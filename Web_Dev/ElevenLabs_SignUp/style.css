@@ -12,11 +12,14 @@ body
     margin:0;
 }
 
+[contenteditable] {
+    outline:none
+}
+
 .hero-section
 {
     height:90vh;
     display:flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -34,6 +37,11 @@ body
     border-radius: 10px;
 }
 
+.sign-up:hover
+{
+    background-color: rgb(0 0 0 / 2%)
+}
+
 .border-line
 {
     border-bottom:1px solid rgb(228, 227, 227);
@@ -49,7 +57,7 @@ body
     display:flex;
     justify-content: center;
     align-items: center;
-    height:8%;
+    height:7%;
     font-family: "Inter", sans-serif;
     border-radius:10px;
     color:white;
@@ -82,10 +90,16 @@ body
 .input-stuff
 {
     width:23%;
-    height:15%;
+    height:13%;
     font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 0.9rem;
+}
+
+.input-fields:focus-within
+{
+    border-color: black;
+    border-width: 2px;
 }
 
 .input-fields
@@ -95,7 +109,7 @@ body
     border:1px solid rgb(228, 227, 227);
     border-radius:10px;
     margin-top:3%;
-    height:47%
+    height:50%
 }
 
 .password-field
@@ -105,16 +119,23 @@ body
     align-items: center;
 }
 
+.email-field
+{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
 .password-input-field
 {
-    width:90%
+    width:86%;
 }
 
 .create-account
 {
     font-family: "Waldenburg";
     font-size:1.5rem;
-    padding-top:4.2%;
+    padding-top:5.5%;
     padding-bottom: 2%;
 }
 
@@ -159,4 +180,20 @@ body
     color:grey;
     text-decoration-thickness: 1.5px;
     text-decoration-color: hsl(240 5.1% 84.7%);
+}
+
+.eleven-labs-logo
+{
+    padding-top:4%
+}
+
+.type-email-field
+{
+    width:92%
+}
+
+.editable-stuff
+{
+    white-space: nowrap;
+    overflow: hidden;
 }
