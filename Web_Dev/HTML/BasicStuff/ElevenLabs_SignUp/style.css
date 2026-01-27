@@ -1,3 +1,5 @@
+/* how to break footer anchor stuff and bring it to next line part by part rather than a whole */
+
 @font-face {
     font-family: "Waldenburg";
     src: url("fonts/waldenburg/Simvkmrwwcnkkicglbiiqcwpbmu/Simvkmrwwcnkkicglbiiqcwpbmu.woff2") format(woff2),
@@ -22,6 +24,7 @@ body
     display:flex;
     align-items: center;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .sign-up
@@ -30,9 +33,9 @@ body
     justify-content: flex-start;
     align-items: center;
     border:1px solid rgb(228, 227, 227);
-    width:21.5%;
-    padding:0.7%;
-    margin-bottom:1%;
+    width:340px;
+    padding:10px;
+    margin-bottom:20px;
     cursor: pointer;
     border-radius: 10px;
 }
@@ -45,19 +48,19 @@ body
 .border-line
 {
     border-bottom:1px solid rgb(228, 227, 227);
-    width:23%;
-    margin-top: 0.7%;
-    margin-bottom: 1.7%;
+    width:360px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .sign-up-button
 {
     background-color: #A6A6AE;
-    width:23.3%;
+    width:365px;
     display:flex;
     justify-content: center;
     align-items: center;
-    height:7%;
+    height:45px;
     font-family: "Inter", sans-serif;
     border-radius:10px;
     color:white;
@@ -69,7 +72,7 @@ body
 {
     display:flex;
     justify-content: center;
-    padding-top:1%;
+    padding-top:20px;
     font-family: "Inter", sans-serif;
     font-size:14px;
     color:#323235;
@@ -89,11 +92,12 @@ body
 
 .input-stuff
 {
-    width:23%;
-    height:13%;
+    width:360px;
+    height:85px;
     font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 0.9rem;
+    color : #323235
 }
 
 .input-fields:focus-within
@@ -128,15 +132,16 @@ body
 
 .password-input-field
 {
-    width:86%;
+    width:310px;
+    padding : 1px 15px;
 }
 
 .create-account
 {
     font-family: "Waldenburg";
     font-size:1.5rem;
-    padding-top:5.5%;
-    padding-bottom: 2%;
+    padding-top:55px;
+    padding-bottom: 40px;
 }
 
 .google-sign-up
@@ -144,13 +149,14 @@ body
     font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 0.87rem;
-    padding-left:23.5%;
+    padding-left:80px
 }
 
 .password-eye
 {
-    width:6%;
-    height:47%;
+    width:20px;
+    height:20px;
+    padding: 12px
 }
 
 .input-stuff-field-name
@@ -158,7 +164,7 @@ body
     cursor:pointer;
 }
 
-.footer-stuff
+.footer-container
 {
     display:flex;
     align-items:center;
@@ -169,14 +175,18 @@ body
     color:grey;
     background-color: rgb(245, 245, 245);
     font-weight:500;
+    padding : 25px;
+    box-sizing: border-box;
+}
+div.footer-container
+{
+    white-space: pre;
 }
 
 .footer-anchor
 {
     text-decoration: underline;
     text-underline-offset: 2px;
-    padding-left:3px;
-    padding-right:3px;
     color:grey;
     text-decoration-thickness: 1.5px;
     text-decoration-color: hsl(240 5.1% 84.7%);
@@ -184,16 +194,51 @@ body
 
 .eleven-labs-logo
 {
-    padding-top:4%
+    padding-top:60px
 }
 
 .type-email-field
 {
-    width:92%
+    width: 330px;
+    padding : 1px 15px;
 }
 
 .editable-stuff
 {
     white-space: nowrap;
     overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    .eleven-labs-logo
+    {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 510px) {
+    .hero-section
+    {
+        height : 87vh
+    }
+    .footer-container
+    {
+        display : inline-flex;
+        flex-wrap : wrap;
+        justify-content: flex-start;
+        height : 13vh
+    }
+}
+
+@media (max-width : 400px) {
+    .sign-up
+    {
+        flex-shrink : 1;
+        width : 85%
+    }
+    .border-line,.sign-up-button,.input-stuff
+    {
+        flex-shrink : 1;
+        width : 90%;
+    }
 }
